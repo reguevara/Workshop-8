@@ -161,12 +161,12 @@ public class GenerateCube : MonoBehaviour
         });
 
         // Task 1: Define the correct normals (as unit vectors; currently they're all "zero")
-        var topNormal = new Vector3(0.0f, 0.0f, 0.0f);
-        var bottomNormal = new Vector3(0.0f, 0.0f, 0.0f);
-        var leftNormal = new Vector3(0.0f, 0.0f, 0.0f);
-        var rightNormal = new Vector3(0.0f, 0.0f, 0.0f);
-        var frontNormal = new Vector3(0.0f, 0.0f, 0.0f);
-        var backNormal = new Vector3(0.0f, 0.0f, 0.0f);
+        var topNormal = new Vector3(0.0f, 1.0f, 0.0f);
+        var bottomNormal = new Vector3(0.0f, -1.0f, 0.0f);
+        var leftNormal = new Vector3(-1.0f, 0.0f, 0.0f);
+        var rightNormal = new Vector3(1.0f, 0.0f, 0.0f);
+        var frontNormal = new Vector3(0.0f, 0.0f, 1.0f);
+        var backNormal = new Vector3(0.0f, 0.0f, -1.0f);
 
         mesh.SetNormals(new[]
         {
